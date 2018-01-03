@@ -185,6 +185,7 @@
     <script src="js/new-age.min.js"></script>
     <script src="js/para.js"></script>
       <script>
+        $(document).ready(function () {
          $('.scene').parallax({
             calibrateX: false, // Specifies whether or not to cache & calculate the motion relative to the initial x axis value on initialisation.
             calibrateY: true, // Specifies whether or not to cache & calculate the motion relative to the initial y axis value on initialisation.
@@ -196,7 +197,8 @@
             scalarY: 5, // Multiplies the input motion by this value, increasing or decreasing the sensitivity of the layer motion.
             frictionX: 0.7, // The amount of friction the layers experience. This essentially adds some easing to the layer motion.
             frictionY: 0.7 // he amount of friction the layers experience. This essentially adds some easing to the layer motion.
-            });
+          });
+        });
       </script>
     
 
